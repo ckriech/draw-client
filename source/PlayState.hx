@@ -15,7 +15,7 @@ using flixel.util.FlxSpriteUtil;
 
 class PlayState extends FlxState {
 	var background: FlxSprite;
-	var ws: WebSocket = WebSocket.create("ws://localhost:8080/game", false);
+	var ws: WebSocket = WebSocket.create("wss://krie.ch:8777/game", false);
 	var ereg:EReg = ~/x(\d+)y(\d+)r(\d+)g(\d+)b(\d+)/;
 	var myColor: FlxColor;
 
